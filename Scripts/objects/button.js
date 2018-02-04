@@ -16,14 +16,14 @@ var objects;
             if (x === void 0) { x = 0; }
             if (y === void 0) { y = 0; }
             var _this = _super.call(this, imagePath) || this;
-            // TODO and regx and regY changes here later
+            // TODO add regx and regy changes here later
             _this.x = x;
             _this.y = y;
-            _this.on("mouserout", _this.mouseOut);
             _this.on("mouseover", _this.mouseOver);
+            _this.on("mouseout", _this.mouseOut);
             return _this;
         }
-        // Methods
+        // METHODS
         Button.prototype.mouseOut = function () {
             this.alpha = 1.0;
         };
